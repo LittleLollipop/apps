@@ -1,5 +1,4 @@
-{{- $onlyofficeDomainENV := split  ","  .Values.domain.onlyoffice -}}
-{{- $onlyofficeDomain := index $onlyofficeDomainENV "_0" -}}
+
 
 
 {{- $of_office_secret := (lookup "v1" "Secret" .Release.Namespace "office-secret") -}}

@@ -4,7 +4,7 @@ metadata:
   description: Firefox Browser
   icon: https://file.bttcdn.com/appstore/firefox/icon.png
   appid: firefox
-  version: '1.0.0'
+  version: '1.0.2'
   title: Firefox
   categories:
   - Utilities
@@ -44,4 +44,5 @@ entrances:
   host: firefox
   title: Firefox
   icon: https://file.bttcdn.com/appstore/firefox/icon.png
+  authLevel: public
 terminusManifest.type: app

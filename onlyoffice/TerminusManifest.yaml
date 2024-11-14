@@ -5,7 +5,7 @@ metadata:
   description: Run your private office with the ONLYOFFICE
   icon: https://file.bttcdn.com/appstore/onlyoffice/icon.png
   appid: onlyoffice
-  version: '1.0.0'
+  version: '1.0.4'
   title: OnlyOffice For Cluster
   categories:
   - Productivity
@@ -163,12 +163,12 @@ options:
     - files
     - onlyofficeclient
 entrances:
-- name: onlyoffice
-  port: 80
-  host: onlyoffice
+- name: onlyofficeproxy
+  port: 8080
+  host: onlyofficeproxy
   title: OnlyOfficeEditor
   icon: https://file.bttcdn.com/appstore/onlyoffice/icon.png
-  authLevel: public
+  authLevel: private
   invisible: true
 middleware:
   postgres:

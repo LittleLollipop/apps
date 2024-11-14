@@ -1,11 +1,11 @@
-terminusManifest.version: '0.8.0'
-terminusManifest.type: app
+olaresManifest.version: '0.8.0'
+olaresManifest.type: app
 metadata:
   name: steamheadless
   description: A Headless Steam Service
   icon: https://file.bttcdn.com/appstore/steamheadless/icon.png
   appid: steamheadless
-  version: '1.0.0'
+  version: '1.0.4'
   title: Steam Headless
   categories:
   - Entertainment
@@ -32,6 +32,47 @@ entrances:
   authLevel: internal
   openMethod: window
   invisible: true
+ports:
+- name: tcp3
+  host: steamheadless
+  port: 47990
+  protocol: tcp
+  exposePort: 47990
+- name: tcp4
+  host: steamheadless
+  port: 47984
+  protocol: tcp
+  exposePort: 47984
+- name: tcp5
+  host: steamheadless
+  port: 47989
+  protocol: tcp
+  exposePort: 47989
+- name: tcp6
+  host: steamheadless
+  port: 48010
+  protocol: tcp
+  exposePort: 48010
+- name: udp1
+  host: steamheadless
+  port: 47998
+  protocol: udp
+  exposePort: 47998
+- name: udp2
+  host: steamheadless
+  port: 47999
+  protocol: udp
+  exposePort: 47999
+- name: udp3
+  host: steamheadless
+  port: 48000
+  protocol: udp
+  exposePort: 48000
+- name: udp4
+  host: steamheadless
+  port: 48002
+  protocol: udp
+  exposePort: 48002
 permission:
   appData: true
   appCache: true
@@ -58,7 +99,7 @@ spec:
 
   developer: Steam-Headless
   sourceCode: https://github.com/Steam-Headless/docker-steam-headless
-  submitter: Terminus
+  submitter: Olares
   locale:
   - en-US
   - zh-CN
@@ -76,6 +117,6 @@ spec:
 options:
   apiTimeout: 0
   dependencies:
-  - name: terminus
+  - name: olares
     type: system
-    version: '>=1.8.0-20240829'
+    version: '>=1.10.1-0'
