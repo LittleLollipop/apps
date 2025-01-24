@@ -105,7 +105,7 @@ spec:
           - >-
             pip config set global.index-url
             https://pypi.tuna.tsinghua.edu.cn/simple; pip config set
-            global.extra-index-url "https://mirrors.aliyun.com/pypi/simple
+            global.extra-index-url "https://pypi.joinolares.cn/root/pypi/+simple/101903697-topsis-code/ https://mirrors.aliyun.com/pypi/simple
             https://pypi.mirrors.ustc.edu.cn/simple
             https://pypi.douban.com/simple";               
             chown -R 1000:1000 /stable-diffusion-webui;  python -u
